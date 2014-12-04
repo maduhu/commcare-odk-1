@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+<LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentTop="true" android:layout_width="fill_parent" android:id="@+id/entity_select_header">
+
+</LinearLayout>
+
+<Spinner
+    android:id="@+id/entity_select_filter_dropdown"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_below="@id/entity_select_header" android:visibility="gone"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" android:layout_above="@+id/searchfooter" android:layout_below="@id/entity_select_filter_dropdown">
+
+    <ProgressBar
+        android:id="@+id/entity_select_loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+<TextView
+    android:id="@+id/no_search_results"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacer_small"
+    android:textSize="21dp"
+	android:visibility="gone"
+    android:layout_below="@+id/entity_select_filter_dropdown"/>
+
+<ListView
+    android:id="@+id/screen_entity_select_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/searchfooter"
+    android:layout_below="@+id/no_search_results"
+    android:listSelector="@drawable/selector" >
+</ListView>
+
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_alignParentBottom="true" android:id="@+id/searchfooter" android:orientation="horizontal" android:background="@drawable/border_top_black" android:paddingTop="1dp">
+
+	<TextView
+	    android:id="@+id/screen_entity_select_search_label"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/TextView01"
+	    android:layout_gravity="center_vertical"
+	    android:text="Search:" >
+</TextView>
+	<RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<EditText android:id="@+id/searchbox" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_toLeftOf="@+id/barcodeButton" android:maxLines="3" android:inputType="textImeMultiLine" android:imeOptions="actionDone"></EditText>
+		<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:src="@drawable/barcode" android:id="@+id/barcodeButton"></ImageButton>
+	</RelativeLayout>
+</LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+syntax: glob
+.DS_Store
+bin/
+gen/
+.classpath
+.project
+
+*.swp
+*.orig
+.hg*
+
+/.cache
+/proguard_cache/

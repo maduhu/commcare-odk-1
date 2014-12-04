@@ -1,0 +1,31 @@
+<!-- Copyright (C) 2009 University of Washington
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not
+use this file except in compliance with the License. You may obtain a copy of
+the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations under
+the License.
+-->
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+    		android:dialogTitle="CommCare Application Server" android:title="CommCare Application Server" android:key="default_app_server" android:defaultValue="@string/default_app_server" android:enabled="true" android:id="@+id/appserver"/>
+            
+                <EditTextPreference
+        android:title="Data Server" android:enabled="true" android:dialogTitle="CommCare Data Server" android:id="@+id/dataserver" android:key="ota-restore-url" android:defaultValue="@string/ota_restore_url"/>
+            
+                <EditTextPreference
+        android:title="Submission Server" android:dialogTitle="CommCare Submission Server" android:enabled="true" android:id="@+id/submitserver" android:key="PostURL" android:defaultValue="@string/PostURL"/>
+                
+<EditTextPreference android:key="default_key_server" android:enabled="true" android:title="Key Server" android:defaultValue="@string/key_server"></EditTextPreference>
+<EditTextPreference android:key="form-record-url" android:enabled="true" android:title="Form Record Server" android:defaultValue="@string/form_record_url"></EditTextPreference>
+<ListPreference android:key="cc-autoup-freq" android:enabled="true" android:title="Auto Update Frequency" android:entryValues="@array/frequency_vals" android:entries="@array/frequency_vals_labels"/>
+<ListPreference android:key="cc-fuzzy-search-enabled" android:enabled="true" android:title="Fuzzy Search Matches" android:entryValues="@array/pref_enabled_vals" android:entries="@array/pref_enabled_lables" android:defaultValue="no"/>
+</PreferenceScreen>
