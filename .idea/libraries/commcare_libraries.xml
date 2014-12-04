@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="commcare-libraries">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/commcare-libraries.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/google-play-services.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/javarosa-libraries.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/joda-time-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/zxingcore-2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
